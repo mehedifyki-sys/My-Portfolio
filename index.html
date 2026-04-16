@@ -3,161 +3,272 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mehedi Hasan | SAP & Supply Chain Portfolio</title>
-  <meta name="description" content="Portfolio of Mehedi Hasan - SAP Team Lead, Supply Chain Operations, Logistics, Dashboards and Process Improvement." />
+  <title>Md. Mehedi Hasan | SAP Functional Lead</title>
+  <meta name="description" content="Portfolio of Md. Mehedi Hasan - SAP Functional Lead with expertise in Supply Chain Management, SAP operations, logistics, warehouse operations, order distribution, and business dashboards." />
   <style>
     :root {
-      --bg: #0b1020;
-      --panel: rgba(18, 25, 48, 0.88);
-      --panel-2: rgba(28, 38, 74, 0.82);
-      --text: #eef3ff;
-      --muted: #b9c5e2;
+      --bg: #07111f;
+      --bg-2: #0d1b30;
+      --panel: rgba(10, 20, 38, 0.80);
+      --panel-strong: rgba(11, 24, 45, 0.94);
+      --text: #eff5ff;
+      --muted: #aab9d5;
       --line: rgba(255,255,255,0.12);
-      --accent: #7fb3ff;
-      --accent-2: #7ef0c6;
-      --shadow: 0 18px 50px rgba(0,0,0,0.28);
-      --max: 1150px;
+      --accent: #7dc1ff;
+      --accent-2: #88f0ca;
+      --accent-3: #ffd479;
+      --shadow: 0 24px 60px rgba(0,0,0,.32);
+      --max: 1180px;
+      --radius: 26px;
     }
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: Inter, Segoe UI, Arial, sans-serif;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top right, rgba(127,179,255,.16), transparent 28%),
-        radial-gradient(circle at left center, rgba(126,240,198,.10), transparent 30%),
-        linear-gradient(180deg, #08101f 0%, #101933 100%);
+        linear-gradient(rgba(4,10,22,.76), rgba(4,10,22,.88)),
+        radial-gradient(circle at 10% 20%, rgba(125,193,255,.20), transparent 24%),
+        radial-gradient(circle at 86% 16%, rgba(136,240,202,.12), transparent 20%),
+        radial-gradient(circle at 84% 78%, rgba(255,212,121,.10), transparent 18%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='900' viewBox='0 0 1600 900'%3E%3Cg opacity='0.16'%3E%3Cpath d='M40 160h240l80 72h250l80-62h220l86 74h254' stroke='%237dc1ff' stroke-width='2' fill='none'/%3E%3Cpath d='M60 460h300l70-54h240l92 66h190l80-64h300' stroke='%2388f0ca' stroke-width='2' fill='none'/%3E%3Cpath d='M140 690h280l76-58h180l100 76h266l70-52h218' stroke='%23ffd479' stroke-width='2' fill='none'/%3E%3Crect x='210' y='128' width='82' height='52' rx='10' fill='none' stroke='%237dc1ff'/%3E%3Crect x='598' y='378' width='100' height='58' rx='12' fill='none' stroke='%2388f0ca'/%3E%3Crect x='1168' y='658' width='92' height='56' rx='12' fill='none' stroke='%23ffd479'/%3E%3Ccircle cx='944' cy='170' r='12' fill='none' stroke='%237dc1ff'/%3E%3Ccircle cx='370' cy='672' r='12' fill='none' stroke='%2388f0ca'/%3E%3Ccircle cx='1332' cy='430' r='12' fill='none' stroke='%23ffd479'/%3E%3C/g%3E%3C/svg%3E"),
+        linear-gradient(180deg, var(--bg) 0%, #0b162b 42%, var(--bg-2) 100%);
+      background-attachment: fixed;
       line-height: 1.6;
     }
 
     a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
     .wrap { width: min(92%, var(--max)); margin: 0 auto; }
 
     .nav {
       position: sticky;
       top: 0;
-      z-index: 100;
-      backdrop-filter: blur(12px);
-      background: rgba(6, 10, 22, 0.78);
+      z-index: 200;
+      backdrop-filter: blur(14px);
+      background: rgba(5, 10, 21, .78);
       border-bottom: 1px solid var(--line);
     }
     .nav-inner {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 18px;
+      align-items: center;
+      gap: 20px;
       padding: 16px 0;
     }
     .brand {
       font-weight: 800;
       letter-spacing: .3px;
-      font-size: 1.05rem;
+      font-size: 1.08rem;
     }
     .brand span { color: var(--accent); }
     .nav-links {
       display: flex;
       gap: 18px;
       flex-wrap: wrap;
-      font-size: 0.95rem;
       color: var(--muted);
+      font-size: .96rem;
     }
+    .nav-links a:hover { color: var(--text); }
 
     .hero {
-      padding: 76px 0 34px;
+      padding: 62px 0 26px;
+      position: relative;
     }
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.3fr .9fr;
-      gap: 28px;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 24px;
       align-items: stretch;
     }
     .card {
       background: var(--panel);
       border: 1px solid var(--line);
-      border-radius: 24px;
+      border-radius: var(--radius);
       box-shadow: var(--shadow);
+      overflow: hidden;
     }
-    .hero-card { padding: 34px; }
+    .hero-card {
+      padding: 34px;
+      position: relative;
+    }
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -100px -100px auto;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(125,193,255,.16), transparent 70%);
+      pointer-events: none;
+    }
     .eyebrow {
-      display: inline-block;
-      font-size: .86rem;
-      color: #d9e7ff;
-      background: rgba(127,179,255,.12);
-      border: 1px solid rgba(127,179,255,.2);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       padding: 8px 14px;
       border-radius: 999px;
+      border: 1px solid rgba(125,193,255,.22);
+      background: rgba(125,193,255,.10);
+      color: #d9e9ff;
+      font-size: .86rem;
       margin-bottom: 18px;
     }
-    h1 {
-      font-size: clamp(2rem, 4vw, 3.8rem);
-      line-height: 1.08;
-      margin: 0 0 14px;
-      letter-spacing: -1px;
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent-2);
+      box-shadow: 0 0 0 6px rgba(136,240,202,.10);
     }
-    .subtitle {
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.15rem, 4vw, 4.15rem);
+      line-height: 1.03;
+      letter-spacing: -1.2px;
+      max-width: 780px;
+    }
+    .lead {
+      margin: 0 0 24px;
       color: var(--muted);
-      font-size: 1.05rem;
+      font-size: 1.04rem;
       max-width: 760px;
-      margin-bottom: 24px;
     }
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
-      margin-top: 8px;
+      margin-bottom: 28px;
     }
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 12px 18px;
+      gap: 10px;
+      padding: 13px 18px;
       border-radius: 14px;
       font-weight: 700;
       border: 1px solid transparent;
       transition: .2s ease;
     }
+    .btn:hover { transform: translateY(-2px); }
     .btn-primary {
-      background: linear-gradient(135deg, var(--accent), #9e8dff);
-      color: #09101d;
+      background: linear-gradient(135deg, var(--accent), #a58cff);
+      color: #08111f;
     }
     .btn-secondary {
-      color: var(--text);
-      border-color: var(--line);
       background: rgba(255,255,255,.03);
+      border-color: var(--line);
+      color: var(--text);
     }
-    .btn:hover { transform: translateY(-2px); }
 
-    .info-card {
-      padding: 28px;
-      background: var(--panel-2);
+    .hero-stats {
       display: grid;
-      gap: 18px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
     }
-    .info-block h3 {
-      margin: 0 0 8px;
-      font-size: .95rem;
+    .mini {
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .mini strong {
+      display: block;
+      color: var(--accent);
+      font-size: 1.5rem;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+    .mini span {
+      color: var(--muted);
+      font-size: .93rem;
+    }
+
+    .profile-card {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      background:
+        linear-gradient(180deg, rgba(125,193,255,.08), rgba(255,255,255,.02)),
+        var(--panel-strong);
+    }
+    .profile-top {
+      padding: 28px 28px 0;
+    }
+    .profile-badge {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: .82rem;
+      color: #d6fff2;
+      background: rgba(136,240,202,.12);
+      border: 1px solid rgba(136,240,202,.20);
+      margin-bottom: 16px;
+    }
+    .profile-photo-wrap {
+      margin: 0 28px;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+      position: relative;
+    }
+    .profile-photo-wrap::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(7,17,31,.00) 45%, rgba(7,17,31,.28) 100%);
+      pointer-events: none;
+    }
+    .profile-photo {
+      width: 100%;
+      aspect-ratio: 4/4.8;
+      object-fit: cover;
+      object-position: center top;
+    }
+    .profile-body {
+      padding: 20px 28px 28px;
+      display: grid;
+      gap: 14px;
+    }
+    .profile-body h3 {
+      margin: 0;
+      font-size: 1.45rem;
+    }
+    .quick-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 2px;
+    }
+    .quick-item {
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .quick-item strong {
+      display: block;
       color: var(--accent-2);
+      font-size: .86rem;
       text-transform: uppercase;
       letter-spacing: .08em;
+      margin-bottom: 4px;
     }
-    .info-block p {
-      margin: 0;
-      color: var(--text);
-    }
+    .quick-item span { color: var(--text); }
 
-    section {
-      padding: 22px 0;
-    }
+    section { padding: 22px 0; }
     .section-title {
-      margin: 0 0 18px;
-      font-size: clamp(1.4rem, 2vw, 2.1rem);
+      font-size: clamp(1.45rem, 2.1vw, 2.25rem);
+      margin: 0 0 8px;
       letter-spacing: -.5px;
     }
     .section-sub {
       color: var(--muted);
-      margin: -6px 0 22px;
+      margin: 0 0 22px;
     }
 
     .grid-3 {
@@ -165,22 +276,29 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
-    .metric, .project, .timeline, .skill-box, .contact-card {
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .metric, .project, .skill-box, .edu-card, .contact-card, .timeline {
       padding: 22px;
     }
+
     .metric strong {
       display: block;
       font-size: 2rem;
+      color: var(--accent);
       line-height: 1;
       margin-bottom: 8px;
-      color: var(--accent);
     }
-    .metric span, .project p, .timeline p, .skill-box p, .contact-card p {
+    .metric span, .project p, .skill-box p, .edu-card p, .contact-card p, .timeline p {
       color: var(--muted);
     }
-    .project h3, .timeline h3, .skill-box h3, .contact-card h3 {
+    .project h3, .skill-box h3, .edu-card h3, .contact-card h3, .timeline h3 {
       margin: 0 0 10px;
-      font-size: 1.08rem;
+      font-size: 1.07rem;
     }
     .project ul {
       padding-left: 18px;
@@ -188,15 +306,43 @@
       color: var(--muted);
     }
     .project li { margin-bottom: 8px; }
+    .highlight {
+      color: var(--accent-3);
+      font-weight: 700;
+    }
 
     .timeline-wrap {
       display: grid;
       gap: 16px;
     }
-    .timeline .meta {
+    .timeline {
+      position: relative;
+      padding-left: 26px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 24px;
+      bottom: 24px;
+      width: 2px;
+      background: linear-gradient(180deg, var(--accent), rgba(255,255,255,.05));
+    }
+    .timeline::after {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 24px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent-2);
+      box-shadow: 0 0 0 6px rgba(136,240,202,.08);
+    }
+    .meta {
       color: var(--accent-2);
       font-weight: 700;
-      font-size: .92rem;
+      font-size: .9rem;
       margin-bottom: 8px;
     }
 
@@ -214,10 +360,31 @@
     .tag {
       padding: 8px 12px;
       border-radius: 999px;
-      background: rgba(127,179,255,.10);
-      border: 1px solid rgba(127,179,255,.18);
-      color: #dce8ff;
+      background: rgba(125,193,255,.10);
+      border: 1px solid rgba(125,193,255,.16);
+      color: #dbe8ff;
       font-size: .92rem;
+    }
+    .tag.gold {
+      background: rgba(255,212,121,.10);
+      border-color: rgba(255,212,121,.18);
+      color: #ffe7b5;
+    }
+    .tag.green {
+      background: rgba(136,240,202,.10);
+      border-color: rgba(136,240,202,.18);
+      color: #d7fff2;
+    }
+
+    .edu-card .year {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: .82rem;
+      margin-bottom: 10px;
+      color: #dce9ff;
+      background: rgba(125,193,255,.10);
+      border: 1px solid rgba(125,193,255,.18);
     }
 
     .contact-grid {
@@ -225,32 +392,44 @@
       grid-template-columns: 1.1fr .9fr;
       gap: 18px;
     }
+
     .footer {
-      color: #99aacd;
+      color: #95a7c6;
       text-align: center;
-      padding: 28px 0 46px;
+      padding: 34px 0 46px;
       font-size: .95rem;
     }
 
-    @media (max-width: 920px) {
+    @media (max-width: 980px) {
       .hero-grid,
-      .contact-grid,
+      .grid-3,
+      .grid-2,
       .skills,
-      .grid-3 {
+      .contact-grid {
         grid-template-columns: 1fr;
       }
-      .nav-inner { align-items: flex-start; flex-direction: column; }
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .profile-photo {
+        aspect-ratio: 4/4.2;
+      }
     }
   </style>
 </head>
 <body>
   <nav class="nav">
     <div class="wrap nav-inner">
-      <div class="brand">Mehedi <span>Hasan</span></div>
+      <div class="brand">Md. Mehedi <span>Hasan</span></div>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </div>
@@ -260,35 +439,58 @@
   <header class="hero wrap">
     <div class="hero-grid">
       <div class="card hero-card">
-        <div class="eyebrow">SAP • Logistics • Supply Chain • Dashboards</div>
-        <h1>SAP & Supply Chain Professional building practical systems that improve operations.</h1>
-        <p class="subtitle">
-          I am Mehedi Hasan, a logistics and SAP-focused professional with experience in supply chain operations,
-          warehouse processes, reporting, and workflow improvement. My work combines SAP execution, Excel-based
-          analysis, and dashboard development to make operations faster, cleaner, and more visible.
+        <div class="eyebrow">SAP • Supply Chain • Logistics • Order Distribution • Dashboards</div>
+        <h1>Driving supply chain execution through SAP, logistics control, order distribution, and business visibility.</h1>
+        <p class="lead">
+          I am <strong>Md. Mehedi Hasan</strong>, a <strong>SAP Functional Lead</strong> with hands-on experience in
+          SAP-supported procurement, warehouse operations, international logistics coordination, reporting, and
+          practical workflow improvement. My background combines <strong>Electrical & Electronics Engineering</strong>,
+          supply chain execution, and data-driven operations support to deliver faster, cleaner, and more reliable business processes.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="mailto:mehedifyki@gmail.com">Email Me</a>
+          <a class="btn btn-primary" href="#projects">View Portfolio</a>
+          <a class="btn btn-secondary" href="mailto:mehediisc@gmail.com">Email Me</a>
           <a class="btn btn-secondary" href="https://www.linkedin.com/in/mehedi-hasan2625/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
+        <div class="hero-stats">
+          <div class="mini">
+            <strong>3+ Years</strong>
+            <span>Experience in SAP operations, logistics coordination, and supply chain execution.</span>
+          </div>
+          <div class="mini">
+            <strong>PGD SCM</strong>
+            <span>Supply Chain Management focus from ISCEA, added to strengthen operational specialization.</span>
+          </div>
+          <div class="mini">
+            <strong>EEE + SCM</strong>
+            <span>Engineering foundation combined with business process and supply chain execution capability.</span>
+          </div>
+        </div>
       </div>
-      <aside class="card info-card">
-        <div class="info-block">
-          <h3>Current Focus</h3>
-          <p>SAP operations, logistics coordination, data visibility, and business process improvement.</p>
+
+      <aside class="card profile-card">
+        <div class="profile-top">
+          <div class="profile-badge">Open to strategic operations opportunities</div>
         </div>
-        <div class="info-block">
-          <h3>Core Domain</h3>
-          <p>SAP S/4HANA, Supply Chain Management, Warehouse & Shipment Coordination, Reporting.</p>
+        <div class="profile-photo-wrap">
+          <img class="profile-photo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUkz/2wBDAQ4ODhMUExgVFRhMNC80TExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTL/wAARCAMYAaQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5Sooor80PyA//2Q==" alt="Md. Mehedi Hasan portrait" />
         </div>
-        <div class="info-block">
-          <h3>Based In</h3>
-          <p>Bangladesh</p>
-        </div>
-        <div class="info-block">
-          <h3>Education</h3>
-          <p>Bachelor’s in Electrical & Electronics Engineering (EEE)</p>
+        <div class="profile-body">
+          <h3>Md. Mehedi Hasan</h3>
+          <div class="quick-list">
+            <div class="quick-item">
+              <strong>Current Role</strong>
+              <span>SAP Functional Lead – Capelli Sport, Garments Manufacturing and Assembling Ltd.</span>
+            </div>
+            <div class="quick-item">
+              <strong>Core Focus</strong>
+              <span>SAP S/4HANA, procurement, logistics, warehouse operations, shipment follow-up, and order distribution.</span>
+            </div>
+            <div class="quick-item">
+              <strong>Location</strong>
+              <span>Dhaka, Bangladesh</span>
+            </div>
+          </div>
         </div>
       </aside>
     </div>
@@ -297,52 +499,52 @@
   <main class="wrap">
     <section id="about">
       <h2 class="section-title">Professional Snapshot</h2>
-      <p class="section-sub">A concise view of my profile, strengths, and business impact.</p>
+      <p class="section-sub">A sharper view of my value across SAP execution, logistics control, and structured operational improvement.</p>
       <div class="grid-3">
         <div class="card metric">
-          <strong>3+ Years</strong>
-          <span>Experience across logistics, SAP operations, reporting, and supply chain support.</span>
+          <strong>SAP Execution</strong>
+          <span>Working with SAP MM, SD, and EWM to support procurement, warehouse, and logistics workflows.</span>
         </div>
         <div class="card metric">
-          <strong>25%</strong>
-          <span>Lead time reduction contributed through logistics system improvement and process discipline.</span>
+          <strong>Order Distribution</strong>
+          <span>Supporting order distribution and material flow control with operational discipline and process visibility.</span>
         </div>
         <div class="card metric">
-          <strong>30%</strong>
-          <span>Performance gain achieved in a prior engineering improvement initiative.</span>
+          <strong>International Logistics</strong>
+          <span>Coordinating shipment planning, customs documentation, and cross-functional operational follow-up.</span>
         </div>
       </div>
     </section>
 
     <section id="projects">
-      <h2 class="section-title">Selected Projects</h2>
-      <p class="section-sub">Projects that reflect my applied work in dashboards, data processing, and operations support.</p>
+      <h2 class="section-title">Selected Portfolio Projects</h2>
+      <p class="section-sub">Examples of systems and operational tools reflecting my practical approach to solving business problems.</p>
       <div class="grid-3">
         <article class="card project">
           <h3>FBB Order Dashboard</h3>
-          <p>Built a Streamlit and Supabase-based dashboard to monitor orders, weekly status, uploads, and data exports in a structured workflow.</p>
+          <p>Built a structured Streamlit and Supabase workflow to monitor orders, weekly status, uploads, and export integrity for business users.</p>
           <ul>
-            <li>Role-based upload and viewing logic</li>
             <li>Week-wise open and closed order visibility</li>
-            <li>Clean export matching original uploaded format</li>
+            <li>Admin-controlled upload and clean export flow</li>
+            <li>Designed for operational transparency and quick review</li>
           </ul>
         </article>
         <article class="card project">
-          <h3>Shipment Tracking Dashboard</h3>
-          <p>Designed shipment reporting views focused on shipped orders, quantities, ship out dates, and dynamic shipment reference analysis.</p>
+          <h3>Shipment Details & Tracking Dashboard</h3>
+          <p>Designed a shipment-focused dashboard centered on shipped orders, quantities, ship-out dates, and reference-level follow-up.</p>
           <ul>
-            <li>Month-wise shipment quantity summaries</li>
-            <li>Shipment reference level visibility</li>
-            <li>Operational tracking for logistics follow-up</li>
+            <li>Month-wise shipment quantity and reference analysis</li>
+            <li>Visibility for logistics follow-up and reporting</li>
+            <li>Built for dynamic operational review</li>
           </ul>
         </article>
         <article class="card project">
-          <h3>Player Data Extraction Tool</h3>
-          <p>Developed a robust HTML-based extraction system to capture player number, initials, and name variations from inconsistent order text.</p>
+          <h3>Player Extraction & Packing Validation Tool</h3>
+          <p>Created a practical extraction system to read inconsistent order text, pull player details, and support packing list matching with exception handling.</p>
           <ul>
-            <li>Handles variant text patterns and inconsistent formatting</li>
-            <li>Built for cleaner export and downstream validation</li>
-            <li>Supports packing-list matching workflow</li>
+            <li>Robust logic for player number, initials, and name patterns</li>
+            <li>Mismatch marking and downstream validation support</li>
+            <li>Focused on real operational use, not theory</li>
           </ul>
         </article>
       </div>
@@ -350,107 +552,130 @@
 
     <section id="experience">
       <h2 class="section-title">Experience</h2>
-      <p class="section-sub">Recent roles aligned with SAP, logistics, coordination, and operational control.</p>
+      <p class="section-sub">Recent roles aligned with procurement, SAP, logistics execution, warehouse coordination, and operational reporting.</p>
       <div class="timeline-wrap">
         <article class="card timeline">
-          <div class="meta">Capelli Sport • SAP Team Lead / SAP Incharge</div>
-          <h3>Operations, SAP coordination, and data visibility</h3>
+          <div class="meta">2024 – Present • Capelli Sport, Garments Manufacturing and Assembling Ltd.</div>
+          <h3>SAP Functional Lead</h3>
           <p>
-            Managing SAP-supported operational workflows with a focus on order control, logistics follow-up,
-            reporting discipline, and process visibility. Worked on practical dashboard solutions to support
-            business teams with cleaner data and faster decision-making.
+            Managing SAP S/4HANA modules <span class="highlight">(MM, SD, EWM)</span> to support procurement, logistics, and warehouse operations.
+            Overseeing purchase order data management, inventory control, material flow, logistics follow-up, documentation compliance,
+            and <span class="highlight">order distribution</span> as part of the current role.
           </p>
         </article>
         <article class="card timeline">
-          <div class="meta">Siemens Industrial Limited • Logistics Support</div>
-          <h3>Supply chain support, coordination, and compliance execution</h3>
+          <div class="meta">2022 – 2024 • Siemens Industrial Ltd.</div>
+          <h3>Logistics Support</h3>
           <p>
-            Supported logistics activities including shipment coordination, documentation, and operational tracking.
-            Contributed to process ownership, cross-functional coordination, and structured execution within the SCM environment.
+            Supported SAP MM transactions for procurement and logistics operations, coordinated import documentation with customs,
+            BTRC, and BSTI, maintained procurement records and logistics documents, and supported supplier communication and shipment tracking.
           </p>
         </article>
         <article class="card timeline">
-          <div class="meta">Shinest Group • Trims Accessories Head</div>
-          <h3>Materials coordination and process control</h3>
+          <div class="meta">2021 – 2022 • Shinest Group</div>
+          <h3>Executive (Trims & Accessories)</h3>
           <p>
-            Handled trims and accessories-related coordination with attention to execution accuracy, supply continuity,
-            and operational support requirements.
+            Led trims and accessories procurement support for garment production, coordinated with suppliers for timely delivery and required specifications,
+            and maintained inventory records to support production continuity.
           </p>
         </article>
       </div>
     </section>
 
+    <section id="education">
+      <h2 class="section-title">Education & Academic Direction</h2>
+      <p class="section-sub">My profile stands out because it combines an engineering base with supply chain specialization and operational ERP execution.</p>
+      <div class="grid-3">
+        <div class="card edu-card">
+          <div class="year">Core Degree</div>
+          <h3>B.Sc. in Electrical & Electronics Engineering</h3>
+          <p>Daffodil International University. This EEE background supports my analytical thinking, systems mindset, and structured problem solving.</p>
+        </div>
+        <div class="card edu-card">
+          <div class="year">Professional Development</div>
+          <h3>PGD in Supply Chain Management (ISCEA)</h3>
+          <p>This supply chain credential strengthens my focus on procurement, warehousing, international logistics, planning, and operations management.</p>
+        </div>
+        <div class="card edu-card">
+          <div class="year">Applied Strength</div>
+          <h3>Engineering + SCM + SAP</h3>
+          <p>I position myself at the intersection of engineering discipline, supply chain management, and ERP-supported execution.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="skills">
       <h2 class="section-title">Skills & Tools</h2>
-      <p class="section-sub">A mix of ERP execution, supply chain operations, reporting, and business support capabilities.</p>
+      <p class="section-sub">A balanced mix of ERP execution, supply chain operations, reporting, and practical digital workflow capability.</p>
       <div class="skills">
         <div class="card skill-box">
-          <h3>ERP & Operations</h3>
-          <p>Hands-on operational support and business process alignment across supply chain workflows.</p>
+          <h3>ERP, Logistics & Operations</h3>
+          <p>Hands-on support across procurement, shipment follow-up, warehouse control, and business process execution.</p>
           <div class="tags">
             <span class="tag">SAP S/4HANA</span>
             <span class="tag">SAP MM</span>
             <span class="tag">SAP SD</span>
             <span class="tag">SAP EWM</span>
+            <span class="tag green">Order Distribution</span>
+            <span class="tag">Inventory Control</span>
             <span class="tag">Warehouse Operations</span>
-            <span class="tag">Shipment Coordination</span>
-            <span class="tag">Supply Chain Support</span>
+            <span class="tag">International Logistics</span>
+            <span class="tag">Purchase Order Management</span>
+            <span class="tag">Compliance Documentation</span>
           </div>
         </div>
         <div class="card skill-box">
-          <h3>Data, Reporting & Systems</h3>
-          <p>Building operational visibility through structured files, dashboards, and automation-friendly logic.</p>
+          <h3>Data, Reporting & Process Improvement</h3>
+          <p>Turning raw operational data into structured outputs, actionable reporting, and usable business dashboards.</p>
           <div class="tags">
             <span class="tag">Advanced Excel</span>
+            <span class="tag">Google Sheets</span>
             <span class="tag">Power BI</span>
             <span class="tag">Streamlit</span>
             <span class="tag">Supabase</span>
+            <span class="tag gold">Data Analysis & Cleaning</span>
             <span class="tag">Dashboard Design</span>
-            <span class="tag">Data Cleaning</span>
-            <span class="tag">Process Improvement</span>
+            <span class="tag">Workflow Improvement</span>
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">Value I Bring</h2>
-      <div class="grid-3">
+      <h2 class="section-title">Why This Profile Is Different</h2>
+      <div class="grid-2">
         <div class="card project">
-          <h3>Operational Discipline</h3>
-          <p>I focus on process clarity, shipment follow-up, execution accuracy, and cross-functional coordination in time-sensitive environments.</p>
+          <h3>Supply chain grounded, not theoretical</h3>
+          <p>I work close to the operational layer — shipment tracking, material flow, documentation, and order handling — while also supporting system visibility through SAP and dashboards.</p>
         </div>
         <div class="card project">
-          <h3>Business Visibility</h3>
-          <p>I turn scattered data into usable operational views so teams can monitor orders, quantities, updates, and exceptions more effectively.</p>
-        </div>
-        <div class="card project">
-          <h3>Practical Problem Solving</h3>
-          <p>I prefer real-world, usable solutions—whether in SAP workflow support, structured Excel models, or lightweight business tools.</p>
+          <h3>Engineering foundation with business execution</h3>
+          <p>My EEE background strengthens structured thinking, while my PGD SCM and SAP experience make that capability usable in real business operations.</p>
         </div>
       </div>
     </section>
 
     <section id="contact">
       <h2 class="section-title">Contact</h2>
-      <p class="section-sub">Replace the placeholder details below before publishing so recruiters can contact you directly.</p>
+      <p class="section-sub">Use the links below directly in your GitHub Pages portfolio, job applications, and LinkedIn profile.</p>
       <div class="contact-grid">
         <div class="card contact-card">
           <h3>Let’s connect</h3>
-          <p><strong>Email:</strong> mehedifyki@gmail.com</p>
-          <p><strong>LinkedIn:</strong> linkedin.com/in/mehedi-hasan2625</p>
-          <p><strong>Location:</strong> Bangladesh</p>
+          <p><strong>Email:</strong> <a href="mailto:mehediisc@gmail.com">mehediisc@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+8801775399833">+8801775399833</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mehedi-hasan2625/" target="_blank" rel="noreferrer">linkedin.com/in/mehedi-hasan2625</a></p>
+          <p><strong>Location:</strong> Dhaka, Bangladesh</p>
         </div>
         <div class="card contact-card">
-          <h3>Best use of this portfolio</h3>
-          <p>Share this link on job applications, LinkedIn, email signatures, and CVs to present your profile in a cleaner and more professional way.</p>
+          <h3>How to use this portfolio</h3>
+          <p>Add this live GitHub Pages link to your CV, LinkedIn headline section, email signature, and job application forms to present your profile in a more professional and modern format.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer wrap">
-    © <span id="year"></span> Mehedi Hasan • SAP & Supply Chain Portfolio
+    © <span id="year"></span> Md. Mehedi Hasan • SAP Functional Lead • Supply Chain Portfolio
   </footer>
 
   <script>
