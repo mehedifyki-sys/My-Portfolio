@@ -2,684 +2,851 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md. Mehedi Hasan | SAP Functional Lead</title>
-  <meta name="description" content="Portfolio of Md. Mehedi Hasan - SAP Functional Lead with expertise in Supply Chain Management, SAP operations, logistics, warehouse operations, order distribution, and business dashboards." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Md. Mehedi Hasan | AI Observation Specialist</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Md. Mehedi Hasan - AI Observation Specialist focused on workflow monitoring, AI quality assurance, anomaly detection, data validation, and human-in-the-loop operations."
+  />
+
+  <meta name="keywords" content="AI Observation Specialist, AI QA, Human in the Loop, Data Validation, Workflow Monitoring, AI Operations, QA Analyst, AI Review Specialist">
+  <meta name="author" content="Md. Mehedi Hasan">
+
   <style>
-    :root {
-      --bg: #07111f;
-      --bg-2: #0d1b30;
-      --panel: rgba(10, 20, 38, 0.80);
-      --panel-strong: rgba(11, 24, 45, 0.94);
-      --text: #eff5ff;
-      --muted: #aab9d5;
-      --line: rgba(255,255,255,0.12);
-      --accent: #7dc1ff;
-      --accent-2: #88f0ca;
-      --accent-3: #ffd479;
-      --shadow: 0 24px 60px rgba(0,0,0,.32);
-      --max: 1180px;
-      --radius: 26px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
+    * {
       margin: 0;
-      font-family: Inter, "Segoe UI", Arial, sans-serif;
-      color: var(--text);
-      background:
-        linear-gradient(rgba(4,10,22,.76), rgba(4,10,22,.88)),
-        radial-gradient(circle at 10% 20%, rgba(125,193,255,.20), transparent 24%),
-        radial-gradient(circle at 86% 16%, rgba(136,240,202,.12), transparent 20%),
-        radial-gradient(circle at 84% 78%, rgba(255,212,121,.10), transparent 18%),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='900' viewBox='0 0 1600 900'%3E%3Cg opacity='0.16'%3E%3Cpath d='M40 160h240l80 72h250l80-62h220l86 74h254' stroke='%237dc1ff' stroke-width='2' fill='none'/%3E%3Cpath d='M60 460h300l70-54h240l92 66h190l80-64h300' stroke='%2388f0ca' stroke-width='2' fill='none'/%3E%3Cpath d='M140 690h280l76-58h180l100 76h266l70-52h218' stroke='%23ffd479' stroke-width='2' fill='none'/%3E%3Crect x='210' y='128' width='82' height='52' rx='10' fill='none' stroke='%237dc1ff'/%3E%3Crect x='598' y='378' width='100' height='58' rx='12' fill='none' stroke='%2388f0ca'/%3E%3Crect x='1168' y='658' width='92' height='56' rx='12' fill='none' stroke='%23ffd479'/%3E%3Ccircle cx='944' cy='170' r='12' fill='none' stroke='%237dc1ff'/%3E%3Ccircle cx='370' cy='672' r='12' fill='none' stroke='%2388f0ca'/%3E%3Ccircle cx='1332' cy='430' r='12' fill='none' stroke='%23ffd479'/%3E%3C/g%3E%3C/svg%3E"),
-        linear-gradient(180deg, var(--bg) 0%, #0b162b 42%, var(--bg-2) 100%);
-      background-attachment: fixed;
-      line-height: 1.6;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", "Segoe UI", sans-serif;
     }
 
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-    .wrap { width: min(92%, var(--max)); margin: 0 auto; }
+    html {
+      scroll-behavior: smooth;
+    }
 
-    .nav {
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(0,180,255,0.18), transparent 30%),
+        radial-gradient(circle at top right, rgba(120,0,255,0.15), transparent 28%),
+        linear-gradient(180deg, #050b14 0%, #0b1424 45%, #111c2e 100%);
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(92%, 1200px);
+      margin: auto;
+    }
+
+    /* NAVBAR */
+
+    nav {
       position: sticky;
       top: 0;
-      z-index: 200;
-      backdrop-filter: blur(14px);
-      background: rgba(5, 10, 21, .78);
-      border-bottom: 1px solid var(--line);
+      z-index: 1000;
+      background: rgba(7, 13, 25, 0.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
     }
-    .nav-inner {
+
+    .nav-wrap {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
-      padding: 16px 0;
+      padding: 18px 0;
+      flex-wrap: wrap;
+      gap: 15px;
     }
-    .brand {
+
+    .logo {
+      font-size: 1.2rem;
       font-weight: 800;
-      letter-spacing: .3px;
-      font-size: 1.08rem;
+      letter-spacing: 0.5px;
     }
-    .brand span { color: var(--accent); }
+
+    .logo span {
+      color: #5cc8ff;
+    }
+
     .nav-links {
       display: flex;
-      gap: 18px;
+      gap: 22px;
       flex-wrap: wrap;
-      color: var(--muted);
-      font-size: .96rem;
     }
-    .nav-links a:hover { color: var(--text); }
+
+    .nav-links a {
+      color: #c7d5ea;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #5cc8ff;
+    }
+
+    /* HERO */
 
     .hero {
-      padding: 62px 0 26px;
-      position: relative;
+      padding: 80px 0 40px;
     }
+
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 24px;
-      align-items: stretch;
-    }
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-    .hero-card {
-      padding: 34px;
-      position: relative;
-    }
-    .hero-card::after {
-      content: "";
-      position: absolute;
-      inset: auto -100px -100px auto;
-      width: 260px;
-      height: 260px;
-      background: radial-gradient(circle, rgba(125,193,255,.16), transparent 70%);
-      pointer-events: none;
-    }
-    .eyebrow {
-      display: inline-flex;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
       align-items: center;
-      gap: 10px;
-      padding: 8px 14px;
+    }
+
+    .glass {
+      background: rgba(16, 26, 42, 0.72);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 26px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+    }
+
+    .hero-left {
+      padding: 40px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 10px 18px;
       border-radius: 999px;
-      border: 1px solid rgba(125,193,255,.22);
-      background: rgba(125,193,255,.10);
-      color: #d9e9ff;
-      font-size: .86rem;
-      margin-bottom: 18px;
+      background: rgba(92,200,255,0.14);
+      border: 1px solid rgba(92,200,255,0.22);
+      color: #dff6ff;
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+      font-weight: 600;
     }
-    .eyebrow::before {
-      content: "";
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: var(--accent-2);
-      box-shadow: 0 0 0 6px rgba(136,240,202,.10);
-    }
+
     h1 {
-      margin: 0 0 14px;
-      font-size: clamp(2.15rem, 4vw, 4.15rem);
-      line-height: 1.03;
-      letter-spacing: -1.2px;
-      max-width: 780px;
+      font-size: clamp(2.2rem, 5vw, 4.8rem);
+      line-height: 1.05;
+      font-weight: 800;
+      margin-bottom: 20px;
     }
-    .lead {
-      margin: 0 0 24px;
-      color: var(--muted);
-      font-size: 1.04rem;
-      max-width: 760px;
+
+    .hero-text {
+      color: #b9c7dd;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
     }
-    .hero-actions {
+
+    .btn-wrap {
       display: flex;
-      flex-wrap: wrap;
       gap: 14px;
-      margin-bottom: 28px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
     }
+
     .btn {
+      padding: 14px 22px;
+      border-radius: 14px;
+      font-weight: 700;
+      transition: 0.3s;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      padding: 13px 18px;
-      border-radius: 14px;
-      font-weight: 700;
-      border: 1px solid transparent;
-      transition: .2s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary {
-      background: linear-gradient(135deg, var(--accent), #a58cff);
-      color: #08111f;
-    }
-    .btn-secondary {
-      background: rgba(255,255,255,.03);
-      border-color: var(--line);
-      color: var(--text);
     }
 
-    .hero-stats {
+    .btn-primary {
+      background: linear-gradient(135deg, #5cc8ff, #9d5cff);
+      color: #06101c;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.03);
+      color: #ffffff;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 14px;
     }
-    .mini {
-      padding: 16px;
+
+    .stat-box {
+      padding: 18px;
       border-radius: 18px;
-      background: rgba(255,255,255,.03);
-      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.05);
     }
-    .mini strong {
-      display: block;
-      color: var(--accent);
+
+    .stat-box h3 {
+      color: #74ffd0;
       font-size: 1.5rem;
-      line-height: 1;
-      margin-bottom: 7px;
+      margin-bottom: 8px;
     }
-    .mini span {
-      color: var(--muted);
-      font-size: .93rem;
+
+    .stat-box p {
+      color: #aebed5;
+      font-size: 0.92rem;
+      line-height: 1.5;
     }
+
+    /* PROFILE */
 
     .profile-card {
-      display: grid;
-      grid-template-rows: auto 1fr;
-      background:
-        linear-gradient(180deg, rgba(125,193,255,.08), rgba(255,255,255,.02)),
-        var(--panel-strong);
+      padding: 28px;
+      text-align: center;
     }
-    .profile-top {
-      padding: 28px 28px 0;
+
+    .profile-image {
+      width: 100%;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 22px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.35);
     }
-    .profile-badge {
-      display: inline-block;
-      padding: 8px 12px;
-      border-radius: 999px;
-      font-size: .82rem;
-      color: #d6fff2;
-      background: rgba(136,240,202,.12);
-      border: 1px solid rgba(136,240,202,.20);
+
+    .profile-card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .profile-role {
+      color: #79cfff;
+      font-weight: 600;
       margin-bottom: 16px;
     }
-    .profile-photo-wrap {
-      margin: 0 28px;
-      border-radius: 24px;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,.12);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
-      position: relative;
-    }
-    .profile-photo-wrap::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(180deg, rgba(7,17,31,.00) 45%, rgba(7,17,31,.28) 100%);
-      pointer-events: none;
-    }
-    .profile-photo {
-      width: 100%;
-      aspect-ratio: 4/4.8;
-      object-fit: cover;
-      object-position: center top;
-    }
-    .profile-body {
-      padding: 20px 28px 28px;
+
+    .profile-info {
       display: grid;
-      gap: 14px;
+      gap: 12px;
+      margin-top: 20px;
+      text-align: left;
     }
-    .profile-body h3 {
-      margin: 0;
-      font-size: 1.45rem;
+
+    .info-box {
+      padding: 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.05);
     }
-    .quick-list {
-      display: grid;
-      gap: 10px;
-      margin-top: 2px;
-    }
-    .quick-item {
-      padding: 12px 14px;
-      border-radius: 16px;
-      background: rgba(255,255,255,.03);
-      border: 1px solid rgba(255,255,255,.08);
-    }
-    .quick-item strong {
+
+    .info-box strong {
       display: block;
-      color: var(--accent-2);
-      font-size: .86rem;
+      color: #74ffd0;
+      margin-bottom: 6px;
+      font-size: 0.85rem;
       text-transform: uppercase;
-      letter-spacing: .08em;
-      margin-bottom: 4px;
+      letter-spacing: 1px;
     }
-    .quick-item span { color: var(--text); }
 
-    section { padding: 22px 0; }
+    .info-box span {
+      color: #d7e5f9;
+      font-size: 0.95rem;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
     .section-title {
-      font-size: clamp(1.45rem, 2.1vw, 2.25rem);
-      margin: 0 0 8px;
-      letter-spacing: -.5px;
+      font-size: clamp(1.8rem, 3vw, 3rem);
+      margin-bottom: 14px;
+      font-weight: 800;
     }
+
     .section-sub {
-      color: var(--muted);
-      margin: 0 0 22px;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-
-    .metric, .project, .skill-box, .edu-card, .contact-card, .timeline {
-      padding: 22px;
-    }
-
-    .metric strong {
-      display: block;
-      font-size: 2rem;
-      color: var(--accent);
-      line-height: 1;
-      margin-bottom: 8px;
-    }
-    .metric span, .project p, .skill-box p, .edu-card p, .contact-card p, .timeline p {
-      color: var(--muted);
-    }
-    .project h3, .skill-box h3, .edu-card h3, .contact-card h3, .timeline h3 {
-      margin: 0 0 10px;
-      font-size: 1.07rem;
-    }
-    .project ul {
-      padding-left: 18px;
-      margin: 12px 0 0;
-      color: var(--muted);
-    }
-    .project li { margin-bottom: 8px; }
-    .highlight {
-      color: var(--accent-3);
-      font-weight: 700;
-    }
-
-    .timeline-wrap {
-      display: grid;
-      gap: 16px;
-    }
-    .timeline {
-      position: relative;
-      padding-left: 26px;
-    }
-    .timeline::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 24px;
-      bottom: 24px;
-      width: 2px;
-      background: linear-gradient(180deg, var(--accent), rgba(255,255,255,.05));
-    }
-    .timeline::after {
-      content: "";
-      position: absolute;
-      left: -5px;
-      top: 24px;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: var(--accent-2);
-      box-shadow: 0 0 0 6px rgba(136,240,202,.08);
-    }
-    .meta {
-      color: var(--accent-2);
-      font-weight: 700;
-      font-size: .9rem;
-      margin-bottom: 8px;
-    }
-
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
-    }
-    .tag {
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(125,193,255,.10);
-      border: 1px solid rgba(125,193,255,.16);
-      color: #dbe8ff;
-      font-size: .92rem;
-    }
-    .tag.gold {
-      background: rgba(255,212,121,.10);
-      border-color: rgba(255,212,121,.18);
-      color: #ffe7b5;
-    }
-    .tag.green {
-      background: rgba(136,240,202,.10);
-      border-color: rgba(136,240,202,.18);
-      color: #d7fff2;
-    }
-
-    .edu-card .year {
-      display: inline-block;
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-size: .82rem;
-      margin-bottom: 10px;
-      color: #dce9ff;
-      background: rgba(125,193,255,.10);
-      border: 1px solid rgba(125,193,255,.18);
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 18px;
-    }
-
-    .footer {
-      color: #95a7c6;
-      text-align: center;
-      padding: 34px 0 46px;
-      font-size: .95rem;
+      color: #aebed5;
+      margin-bottom: 28px;
+      line-height: 1.7;
     }
 
     @media (max-width: 980px) {
       .hero-grid,
-      .grid-3,
-      .grid-2,
-      .skills,
-      .contact-grid {
+      .stats {
         grid-template-columns: 1fr;
       }
-      .hero-stats {
-        grid-template-columns: 1fr;
+
+      .hero-left,
+      .profile-card {
+        padding: 26px;
       }
-      .nav-inner {
+
+      .nav-wrap {
         flex-direction: column;
         align-items: flex-start;
-      }
-      .profile-photo {
-        aspect-ratio: 4/4.2;
       }
     }
   </style>
 </head>
+
 <body>
-  <nav class="nav">
-    <div class="wrap nav-inner">
-      <div class="brand">Md. Mehedi <span>Hasan</span></div>
+
+  <nav>
+    <div class="container nav-wrap">
+      <div class="logo">Md. Mehedi <span>Hasan</span></div>
+
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
-  <header class="hero wrap">
-    <div class="hero-grid">
-      <div class="card hero-card">
-        <div class="eyebrow">SAP • Supply Chain • Logistics • Order Distribution • Dashboards</div>
-        <h1>Driving supply chain execution through SAP, logistics control, order distribution, and business visibility.</h1>
-        <p class="lead">
-          I am <strong>Md. Mehedi Hasan</strong>, a <strong>SAP Functional Lead</strong> with hands-on experience in
-          SAP-supported procurement, warehouse operations, international logistics coordination, reporting, and
-          practical workflow improvement. My background combines <strong>Electrical & Electronics Engineering</strong>,
-          supply chain execution, and data-driven operations support to deliver faster, cleaner, and more reliable business processes.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View Portfolio</a>
-          <a class="btn btn-secondary" href="mailto:mehediisc@gmail.com">Email Me</a>
-          <a class="btn btn-secondary" href="https://www.linkedin.com/in/mehedi-hasan2625/" target="_blank" rel="noreferrer">LinkedIn</a>
+  <header class="hero">
+    <div class="container hero-grid">
+
+      <div class="glass hero-left">
+        <div class="badge">
+          AI Observation Specialist • AI QA • Human-in-the-Loop • Workflow Monitoring
         </div>
-        <div class="hero-stats">
-          <div class="mini">
-            <strong>3+ Years</strong>
-            <span>Experience in SAP operations, logistics coordination, and supply chain execution.</span>
+
+        <h1>
+          Monitoring AI workflows, validating outputs, and ensuring operational quality.
+        </h1>
+
+        <p class="hero-text">
+          I am Md. Mehedi Hasan, an AI Observation Specialist candidate with strong experience in
+          workflow monitoring, data validation, exception handling, operational intelligence,
+          dashboard analytics, ERP process oversight, and structured quality assurance.
+        </p>
+
+        <div class="btn-wrap">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="Mehedi_Hasan_CV.pdf" class="btn btn-secondary" download>Download CV</a>
+          <a href="mailto:mehediisc@gmail.com" class="btn btn-secondary">Email Me</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat-box">
+            <h3>3+ Years</h3>
+            <p>Operational monitoring and structured enterprise workflow management.</p>
           </div>
-          <div class="mini">
-            <strong>PGD SCM</strong>
-            <span>Supply Chain Management focus from ISCEA, added to strengthen operational specialization.</span>
+
+          <div class="stat-box">
+            <h3>AI Ready</h3>
+            <p>Human-in-the-loop review, exception validation, anomaly observation.</p>
           </div>
-          <div class="mini">
-            <strong>EEE + SCM</strong>
-            <span>Engineering foundation combined with business process and supply chain execution capability.</span>
+
+          <div class="stat-box">
+            <h3>Analytics</h3>
+            <p>Dashboard visibility, data review, reporting, operational intelligence.</p>
           </div>
         </div>
       </div>
 
-      <aside class="card profile-card">
-        <div class="profile-top">
-          <div class="profile-badge">Open to strategic operations opportunities</div>
-        </div>
-        <div class="profile-photo-wrap">
-          <img class="profile-photo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUkz/2wBDAQ4ODhMUExgVFRhMNC80TExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTL/wAARCAMYAaQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5Sooor80PyA//2Q==" alt="Md. Mehedi Hasan portrait" />
-        </div>
-        <div class="profile-body">
-          <h3>Md. Mehedi Hasan</h3>
-          <div class="quick-list">
-            <div class="quick-item">
-              <strong>Current Role</strong>
-              <span>SAP Functional Lead – Capelli Sport, Garments Manufacturing and Assembling Ltd.</span>
-            </div>
-            <div class="quick-item">
-              <strong>Core Focus</strong>
-              <span>SAP S/4HANA, procurement, logistics, warehouse operations, shipment follow-up, and order distribution.</span>
-            </div>
-            <div class="quick-item">
-              <strong>Location</strong>
-              <span>Dhaka, Bangladesh</span>
-            </div>
+      <div class="glass profile-card">
+        <img src="YOUR_IMAGE_BASE64_HERE" alt="Md. Mehedi Hasan" class="profile-image" />
+
+        <h2>Md. Mehedi Hasan</h2>
+        <p class="profile-role">AI Observation Specialist</p>
+
+        <div class="profile-info">
+          <div class="info-box">
+            <strong>Current Experience</strong>
+            <span>SAP Functional Lead / Enterprise Workflow Operations</span>
+          </div>
+
+          <div class="info-box">
+            <strong>Core Strength</strong>
+            <span>Monitoring, validation, exception handling, workflow intelligence</span>
+          </div>
+
+          <div class="info-box">
+            <strong>Location</strong>
+            <span>Dhaka, Bangladesh</span>
           </div>
         </div>
-      </aside>
+      </div>
+
     </div>
   </header>
 
-  <main class="wrap">
+  <style>
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      padding: 24px;
+      border-radius: 22px;
+      background: rgba(16, 26, 42, 0.72);
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 14px;
+      color: #ffffff;
+    }
+
+    .card p {
+      color: #b9c7dd;
+      line-height: 1.7;
+      font-size: 0.96rem;
+    }
+
+    @media (max-width: 980px) {
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <main>
+
     <section id="about">
-      <h2 class="section-title">Professional Snapshot</h2>
-      <p class="section-sub">A sharper view of my value across SAP execution, logistics control, and structured operational improvement.</p>
-      <div class="grid-3">
-        <div class="card metric">
-          <strong>SAP Execution</strong>
-          <span>Working with SAP MM, SD, and EWM to support procurement, warehouse, and logistics workflows.</span>
-        </div>
-        <div class="card metric">
-          <strong>Order Distribution</strong>
-          <span>Supporting order distribution and material flow control with operational discipline and process visibility.</span>
-        </div>
-        <div class="card metric">
-          <strong>International Logistics</strong>
-          <span>Coordinating shipment planning, customs documentation, and cross-functional operational follow-up.</span>
+      <div class="container">
+        <h2 class="section-title">Professional Snapshot</h2>
+        <p class="section-sub">
+          My background combines enterprise workflow monitoring, structured validation,
+          logistics oversight, dashboard analytics, and operational quality assurance—
+          making my transition into AI Observation highly practical and relevant.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Workflow Monitoring</h3>
+            <p>
+              Experienced in observing complex business workflows, tracking failures,
+              validating operational status, and maintaining structured process continuity.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Data Validation</h3>
+            <p>
+              Strong experience reviewing mismatches, transactional inconsistencies,
+              documentation errors, and anomaly detection across structured systems.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Human-in-the-Loop Review</h3>
+            <p>
+              Practical decision support experience involving exception review,
+              escalation handling, workflow correction, and quality control.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="projects">
-      <h2 class="section-title">Selected Portfolio Projects</h2>
-      <p class="section-sub">Examples of systems and operational tools reflecting my practical approach to solving business problems.</p>
-      <div class="grid-3">
-        <article class="card project">
-          <h3>FBB Order Dashboard</h3>
-          <p>Built a structured Streamlit and Supabase workflow to monitor orders, weekly status, uploads, and export integrity for business users.</p>
-          <ul>
-            <li>Week-wise open and closed order visibility</li>
-            <li>Admin-controlled upload and clean export flow</li>
-            <li>Designed for operational transparency and quick review</li>
-          </ul>
-        </article>
-        <article class="card project">
-          <h3>Shipment Details & Tracking Dashboard</h3>
-          <p>Designed a shipment-focused dashboard centered on shipped orders, quantities, ship-out dates, and reference-level follow-up.</p>
-          <ul>
-            <li>Month-wise shipment quantity and reference analysis</li>
-            <li>Visibility for logistics follow-up and reporting</li>
-            <li>Built for dynamic operational review</li>
-          </ul>
-        </article>
-        <article class="card project">
-          <h3>Player Extraction & Packing Validation Tool</h3>
-          <p>Created a practical extraction system to read inconsistent order text, pull player details, and support packing list matching with exception handling.</p>
-          <ul>
-            <li>Robust logic for player number, initials, and name patterns</li>
-            <li>Mismatch marking and downstream validation support</li>
-            <li>Focused on real operational use, not theory</li>
-          </ul>
-        </article>
+      <div class="container">
+        <h2 class="section-title">AI-Relevant Projects</h2>
+        <p class="section-sub">
+          Practical project experience demonstrating monitoring, data extraction,
+          anomaly review, and workflow intelligence.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>AI-Assisted Workflow Monitoring Dashboard</h3>
+            <p>
+              Designed a dashboard system to monitor workflow progression,
+              identify status changes, detect stalled operations, and provide
+              structured operational visibility.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Anomaly Tracking & Exception Dashboard</h3>
+            <p>
+              Built shipment and workflow monitoring dashboards for identifying
+              inconsistencies, delay conditions, exception scenarios,
+              and intervention requirements.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Document Parsing & Entity Extraction Tool</h3>
+            <p>
+              Developed extraction logic to identify names, numeric patterns,
+              structured identifiers, and exception records from inconsistent source data.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
+    <style>
+      .timeline {
+        display: grid;
+        gap: 20px;
+      }
+
+      .timeline-item {
+        position: relative;
+        padding: 26px 26px 26px 34px;
+        border-radius: 22px;
+        background: rgba(16, 26, 42, 0.72);
+        border: 1px solid rgba(255,255,255,0.08);
+        backdrop-filter: blur(16px);
+        box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+      }
+
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: 14px;
+        top: 30px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #74ffd0;
+        box-shadow: 0 0 15px rgba(116,255,208,0.5);
+      }
+
+      .timeline-meta {
+        color: #79cfff;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .timeline-item h3 {
+        margin-bottom: 14px;
+        font-size: 1.25rem;
+      }
+
+      .timeline-item p {
+        color: #b9c7dd;
+        line-height: 1.8;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .tag-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .tag {
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(92,200,255,0.10);
+        border: 1px solid rgba(92,200,255,0.18);
+        color: #dff6ff;
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 980px) {
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
 
     <section id="experience">
-      <h2 class="section-title">Experience</h2>
-      <p class="section-sub">Recent roles aligned with procurement, SAP, logistics execution, warehouse coordination, and operational reporting.</p>
-      <div class="timeline-wrap">
-        <article class="card timeline">
-          <div class="meta">2024 – Present • Capelli Sport, Garments Manufacturing and Assembling Ltd.</div>
-          <h3>SAP Functional Lead</h3>
-          <p>
-            Managing SAP S/4HANA modules <span class="highlight">(MM, SD, EWM)</span> to support procurement, logistics, and warehouse operations.
-            Overseeing purchase order data management, inventory control, material flow, logistics follow-up, documentation compliance,
-            and <span class="highlight">order distribution</span> as part of the current role.
-          </p>
-        </article>
-        <article class="card timeline">
-          <div class="meta">2022 – 2024 • Siemens Industrial Ltd.</div>
-          <h3>Logistics Support</h3>
-          <p>
-            Supported SAP MM transactions for procurement and logistics operations, coordinated import documentation with customs,
-            BTRC, and BSTI, maintained procurement records and logistics documents, and supported supplier communication and shipment tracking.
-          </p>
-        </article>
-        <article class="card timeline">
-          <div class="meta">2021 – 2022 • Shinest Group</div>
-          <h3>Executive (Trims & Accessories)</h3>
-          <p>
-            Led trims and accessories procurement support for garment production, coordinated with suppliers for timely delivery and required specifications,
-            and maintained inventory records to support production continuity.
-          </p>
-        </article>
-      </div>
-    </section>
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-sub">
+          Enterprise operational experience translated into AI observation, validation,
+          workflow monitoring, and structured review capability.
+        </p>
 
-    <section id="education">
-      <h2 class="section-title">Education & Academic Direction</h2>
-      <p class="section-sub">My profile stands out because it combines an engineering base with supply chain specialization and operational ERP execution.</p>
-      <div class="grid-3">
-        <div class="card edu-card">
-          <div class="year">Core Degree</div>
-          <h3>B.Sc. in Electrical & Electronics Engineering</h3>
-          <p>Daffodil International University. This EEE background supports my analytical thinking, systems mindset, and structured problem solving.</p>
-        </div>
-        <div class="card edu-card">
-          <div class="year">Professional Development</div>
-          <h3>PGD in Supply Chain Management (ISCEA)</h3>
-          <p>This supply chain credential strengthens my focus on procurement, warehousing, international logistics, planning, and operations management.</p>
-        </div>
-        <div class="card edu-card">
-          <div class="year">Applied Strength</div>
-          <h3>Engineering + SCM + SAP</h3>
-          <p>I position myself at the intersection of engineering discipline, supply chain management, and ERP-supported execution.</p>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-meta">2024 – Present | Capelli Sports</div>
+            <h3>SAP Functional Lead</h3>
+            <p>
+              Managing enterprise workflows, validating transactional integrity,
+              monitoring inventory and logistics operations, identifying process exceptions,
+              overseeing reporting visibility, and supporting operational decision-making.
+              These responsibilities align strongly with AI observation and workflow monitoring.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">2022 – 2024 | Siemens</div>
+            <h3>Logistics Support</h3>
+            <p>
+              Worked on shipment tracking, documentation validation, compliance monitoring,
+              procurement data review, workflow exception handling, and operational coordination
+              across multiple business functions.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">2021 – 2022 | Shinest Group</div>
+            <h3>Executive – Trims & Accessories</h3>
+            <p>
+              Coordinated supplier workflows, inventory oversight, material flow monitoring,
+              production continuity validation, and exception follow-up across operational teams.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
 
     <section id="skills">
-      <h2 class="section-title">Skills & Tools</h2>
-      <p class="section-sub">A balanced mix of ERP execution, supply chain operations, reporting, and practical digital workflow capability.</p>
-      <div class="skills">
-        <div class="card skill-box">
-          <h3>ERP, Logistics & Operations</h3>
-          <p>Hands-on support across procurement, shipment follow-up, warehouse control, and business process execution.</p>
-          <div class="tags">
-            <span class="tag">SAP S/4HANA</span>
-            <span class="tag">SAP MM</span>
-            <span class="tag">SAP SD</span>
-            <span class="tag">SAP EWM</span>
-            <span class="tag green">Order Distribution</span>
-            <span class="tag">Inventory Control</span>
-            <span class="tag">Warehouse Operations</span>
-            <span class="tag">International Logistics</span>
-            <span class="tag">Purchase Order Management</span>
-            <span class="tag">Compliance Documentation</span>
+      <div class="container">
+        <h2 class="section-title">Core Skills & Tools</h2>
+        <p class="section-sub">
+          Practical strengths relevant to AI observation, quality assurance, workflow analysis,
+          and structured review environments.
+        </p>
+
+        <div class="skills-grid">
+
+          <div class="card">
+            <h3>AI Observation & Monitoring Skills</h3>
+
+            <div class="tag-wrap">
+              <span class="tag">AI Observation</span>
+              <span class="tag">Human-in-the-Loop Review</span>
+              <span class="tag">AI QA</span>
+              <span class="tag">Workflow Monitoring</span>
+              <span class="tag">Anomaly Detection</span>
+              <span class="tag">Exception Handling</span>
+              <span class="tag">Data Validation</span>
+              <span class="tag">Output Review</span>
+              <span class="tag">Quality Assurance</span>
+              <span class="tag">Root Cause Analysis</span>
+            </div>
           </div>
-        </div>
-        <div class="card skill-box">
-          <h3>Data, Reporting & Process Improvement</h3>
-          <p>Turning raw operational data into structured outputs, actionable reporting, and usable business dashboards.</p>
-          <div class="tags">
-            <span class="tag">Advanced Excel</span>
-            <span class="tag">Google Sheets</span>
-            <span class="tag">Power BI</span>
-            <span class="tag">Streamlit</span>
-            <span class="tag">Supabase</span>
-            <span class="tag gold">Data Analysis & Cleaning</span>
-            <span class="tag">Dashboard Design</span>
-            <span class="tag">Workflow Improvement</span>
+
+          <div class="card">
+            <h3>Technical & Business Tools</h3>
+
+            <div class="tag-wrap">
+              <span class="tag">SAP S/4HANA</span>
+              <span class="tag">SAP MM</span>
+              <span class="tag">SAP SD</span>
+              <span class="tag">SAP EWM</span>
+              <span class="tag">Excel</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Google Sheets</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">Dashboard Analytics</span>
+              <span class="tag">Entity Extraction</span>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <section>
-      <h2 class="section-title">Why This Profile Is Different</h2>
-      <div class="grid-2">
-        <div class="card project">
-          <h3>Supply chain grounded, not theoretical</h3>
-          <p>I work close to the operational layer — shipment tracking, material flow, documentation, and order handling — while also supporting system visibility through SAP and dashboards.</p>
-        </div>
-        <div class="card project">
-          <h3>Engineering foundation with business execution</h3>
-          <p>My EEE background strengthens structured thinking, while my PGD SCM and SAP experience make that capability usable in real business operations.</p>
+    <section id="certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications & Learning</h2>
+        <p class="section-sub">
+          Continuous learning supporting structured analysis, operational intelligence,
+          and professional growth.
+        </p>
+
+        <div class="grid-3">
+
+          <div class="card">
+            <h3>PGD in Supply Chain Management</h3>
+            <p>
+              Advanced professional development focused on supply chain operations,
+              structured workflow design, and operational excellence.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>International Logistics Training</h3>
+            <p>
+              Structured logistics and workflow exposure involving shipment monitoring,
+              exception review, and operational coordination.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Machine Learning Academic Exposure</h3>
+            <p>
+              Foundational understanding of AI/ML concepts through engineering education
+              and technical project work.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
+    <style>
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 22px;
+      }
+
+      .contact-card {
+        padding: 28px;
+        border-radius: 22px;
+        background: rgba(16, 26, 42, 0.72);
+        border: 1px solid rgba(255,255,255,0.08);
+        backdrop-filter: blur(16px);
+        box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+      }
+
+      .contact-card h3 {
+        margin-bottom: 18px;
+        font-size: 1.4rem;
+      }
+
+      .contact-item {
+        margin-bottom: 16px;
+        color: #d7e5f9;
+        line-height: 1.7;
+      }
+
+      .contact-item strong {
+        color: #74ffd0;
+      }
+
+      .cta-box {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .cta-box h3 {
+        font-size: 1.6rem;
+        margin-bottom: 16px;
+      }
+
+      .cta-box p {
+        color: #b9c7dd;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+
+      footer {
+        padding: 40px 0;
+        text-align: center;
+        color: #9eb2cf;
+        border-top: 1px solid rgba(255,255,255,0.06);
+        margin-top: 40px;
+      }
+
+      .fade-up {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeUp 1s ease forwards;
+      }
+
+      @keyframes fadeUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 980px) {
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
 
     <section id="contact">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-sub">Use the links below directly in your GitHub Pages portfolio, job applications, and LinkedIn profile.</p>
-      <div class="contact-grid">
-        <div class="card contact-card">
-          <h3>Let’s connect</h3>
-          <p><strong>Email:</strong> <a href="mailto:mehediisc@gmail.com">mehediisc@gmail.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+8801775399833">+8801775399833</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mehedi-hasan2625/" target="_blank" rel="noreferrer">linkedin.com/in/mehedi-hasan2625</a></p>
-          <p><strong>Location:</strong> Dhaka, Bangladesh</p>
-        </div>
-        <div class="card contact-card">
-          <h3>How to use this portfolio</h3>
-          <p>Add this live GitHub Pages link to your CV, LinkedIn headline section, email signature, and job application forms to present your profile in a more professional and modern format.</p>
+      <div class="container">
+        <h2 class="section-title">Let’s Connect</h2>
+        <p class="section-sub">
+          Open to AI Observation Specialist, AI QA, Human-in-the-Loop,
+          workflow monitoring, and operational intelligence opportunities.
+        </p>
+
+        <div class="contact-grid">
+
+          <div class="contact-card fade-up">
+            <h3>Contact Information</h3>
+
+            <div class="contact-item">
+              <strong>Email:</strong><br>
+              mehediisc@gmail.com
+            </div>
+
+            <div class="contact-item">
+              <strong>Phone:</strong><br>
+              +8801775399833
+            </div>
+
+            <div class="contact-item">
+              <strong>LinkedIn:</strong><br>
+              https://linkedin.com/in/mehedi-hasan2625
+            </div>
+
+            <div class="contact-item">
+              <strong>Location:</strong><br>
+              Dhaka, Bangladesh
+            </div>
+          </div>
+
+          <div class="contact-card cta-box fade-up">
+            <h3>Ready for AI Operations Roles</h3>
+
+            <p>
+              I bring enterprise workflow monitoring, structured validation,
+              anomaly observation, dashboard intelligence, and quality assurance
+              experience that aligns strongly with AI observation environments.
+            </p>
+
+            <a href="Mehedi_Hasan_CV.pdf" class="btn btn-primary" download>
+              Download Resume
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="footer wrap">
-    © <span id="year"></span> Md. Mehedi Hasan • SAP Functional Lead • Supply Chain Portfolio
+  <footer>
+    © 2026 Md. Mehedi Hasan | AI Observation Specialist Portfolio
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateY(0)";
+        }
+      });
+    });
+
+    document.querySelectorAll('.card, .timeline-item, .contact-card').forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = "translateY(25px)";
+      el.style.transition = "all 0.8s ease";
+      observer.observe(el);
+    });
   </script>
+
 </body>
 </html>
